@@ -7,13 +7,10 @@ int main(){
    //The following calculations set the size of array 2 to match the size of the original array
     int size = sizeof(arr)/sizeof(arr[0]);
     int arr2[size];
-
     int* ptr = arr; //Pointer integer to the original array
-
     cout<<"This is the original array: ";
     
-    //This for-loop prints each element in the original array
-    for (int i=0; i<size; i++){
+    for (int i=0; i<size; i++){  //This for-loop prints each element in the original array
         cout<<*(ptr+i)<<" ";
     }
 
@@ -23,9 +20,7 @@ int main(){
     }
 
     cout<<"\nThis is the new array: ";
-
-    //Printing the new array elements
-    for(int i=0; i<size; i++){
+    for(int i=0; i<size; i++){ //Printing the new array elements
         cout<<arr2[i]<<" ";
     }
     return 0;
